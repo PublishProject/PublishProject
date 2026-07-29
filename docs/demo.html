@@ -49,16 +49,12 @@
 
         <div class="card">
             <h2>Step 2: Select Content (Content Posting API)</h2>
-            <p>Choose an AI-generated educational video to post.</p>
-            <div class="upload-area">
-                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#999" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                    <polygon points="23 7 16 12 23 17 23 7"/>
-                    <rect x="1" y="5" width="15" height="14" rx="2" ry="2"/>
-                </svg>
-                <p style="margin-top:12px;font-weight:500">Drop video here or click to select</p>
-                <p style="font-size:12px;margin-top:6px;color:#bbb">MP4, MOV — Max 50MB</p>
+            <p>Video selected for publishing.</p>
+            <div style="background:#f0f0f0;border-radius:12px;overflow:hidden;position:relative">
+                <video src="demo.mp4" style="width:100%;display:block" controls></video>
+                <div style="position:absolute;top:10px;right:10px;background:rgba(0,0,0,0.7);color:white;font-size:12px;padding:3px 8px;border-radius:4px">00:45</div>
             </div>
-            <div id="upload-result" class="status success" style="display:none;margin-top:15px">
+            <div class="status success" style="margin-top:15px">
                 ✓ Video uploaded: "Animals of the Farm - Ep. 1" (45s)
             </div>
         </div>
